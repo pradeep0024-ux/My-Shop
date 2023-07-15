@@ -12,42 +12,66 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-/*  */
 
-.img-wrapper img{
-  height: 100px;
-}
-.item{
-  float: left;
+/* start styling */
+.btn-wrapper button {
+  background-color: red;
+  border: 0px;
   padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: #333 0px 1px 5px;
 }
+
+.img-wrapper img {
+  width: 100px;
+  margin-top: -10px;
+  ;
+}
+
 .cart-wrapper {
-  border: 1px solid red;
-    width: 600px;
-    height: 100px;
-    padding: 10px;
-    margin-left: 20px;
+  height: 100px;
+  width: 500px;
+  border: 1px solid #ccc;
+  margin-left: 10%;
 }
-.text-wrapper{
-  margin-top: 30px;
-}
-.btn-wrapper button{
-  background-color: aqua;
-  /* height: 30px; */
-  border: 0;
-  border-radius: 6px;
-  padding: 10px;
-  margin-top: 20px;
 
+.item {
+  float: left;
+  display: inline-block;
+  width: 120px;
+  padding: 12px;
+  height: 70px;
 }
-.add-to-cart img{
+
+.add-to-cart img {
   width: 80px;
   position: absolute;
-  right: 3%;
-  top: 5%;
+  right: 1%;
+  top: 1%;
 }
 
-/*  */
+.cart-count {
+
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  z-index: 1;
+  background-color: red;
+  padding: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+button.remove-cart-btn {
+  background-color: aqua;
+  margin-top: 10px;
+
+}
+
+/* end styling */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -67,6 +91,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
